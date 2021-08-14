@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Les pays du monde</title>
+	<style type="text/css">
+	 html { height:100% }
+	 body {
+	 height:100%;
+	 padding:0;
+	 margin:0;
+	background-color:#D2D2D2;
+	 }
+		.mapTooltip {
+			position:fixed;
+			background-color : #F9FE67;
+			moz-opacity:1;
+			opacity: 1;
+			filter:alpha(opacity=70);
+			border:1px solid black;
+			border-radius:5px;
+			padding : 10px;
+			z-index: 1000;
+			max-width: 200px;
+			display:none;
+			color:#343434;
+			font-weight:bold;
+		}
+
+
+		.mapLegend {
+		}
+
+		h1 {
+			text-align:center;
+			font-size:2em;
+			color:#3d3d3d;
+			margin:20px auto;
+		}
+
+		h2 {
+			font-size:22px;
+			color:#3d3d3d;
+			margin-top:50px;
+		}
+
+		.container {
+			margin: 10px;
+			height:100%;
+			position:relative;
+		}
+		.maparea6 {
+			height:100%;
+			min-height: 100%;
+			z-index:10;
+		}
+		.map {
+			position:relative;
+			height:100%;
+			min-height: 100%;
+			background-color:#7FC6BC;
+			border-radius:10px;
+			z-index:20;
+
+		}
+
+		svg {
+		height:100%;
+		margin:0 auto;
+		z-index:30;
+
+		}
+
+		p#retour {
+			position:absolute;
+			top:0;
+			left:35px;
+			font-family:verdana,sans-serif,serif;
+			font-size:0.9em;
+			z-index:100;
+		}
+		p#retour a {
+			color:#297C71;
+		}
+		p#retour a:visited {
+			color:#297C71;
+		}
+
+		.zoomIn, .zoomOut {
+			background-color:#fff;
+			border:1px solid #ccc;
+			color:#000;
+			width:15px;
+			height:15px;
+			line-height: 15px;
+			text-align:center;
+			border-radius:3px;
+			cursor:pointer;
+			position:absolute;
+			top : 10px;
+			font-weight:bold;
+			left : 10px;
+			z-index:100;
+
+			-webkit-user-select: none; // For Webkit
+			-khtml-user-select: none;
+			-moz-user-select: none; // For Mozilla
+			-o-user-select: none;
+			user-select: none; // Default
+		}
+
+		.zoomOut {
+			top:30px;
+		}
+
+
+</style>
+</head>
+
+<body>
+	<div class="container">
+		<p id="retour">
+			<a href="../index.html" style="font-weight:bold">Retour</a>
+		</p>
+
+		<div class="maparea6">
+			<div class="map">
+				<span>Alternative content for the map</span>
+			</div>
+
+		</div>
+
+
+
+
+	</div>
+
+	<script src="js/jquery-1.9.1.js" charset="utf-8" ></script>
+	<script src="js/raphael-min.js" charset="utf-8" ></script>
+	<script src="js/jquery.mapael.js" charset="utf-8" ></script>
+	<script src="js/world_countries.js" charset="utf-8" ></script>
+	<script src="js/jquery.mousewheel.js" charset="utf-8" ></script>
+	<script src="js/carte.js" charset="utf-8" ></script>
+
+</body>
+</html>
