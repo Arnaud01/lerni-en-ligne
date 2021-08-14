@@ -1,0 +1,114 @@
+<div class="container-fluid" id="main"  ng-controller="CtrlWordImage">
+	<div class="row" id="row">
+
+		<div class="col-lg-3 col-md-4 col-sm-4">
+
+			<div class="navbar navbar-default" role="navigation">
+				<div class="container-fluid">
+					<div class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".menu2">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<div  class="navbar-brand">Lis le mot et clique sur l'image</div>
+					</div>
+				</div>
+
+				<div class="container-fluid">
+
+					<div class="collapse navbar-collapse menu2" id="sidebar">
+
+						<ul class="nav nav-pills nav-stacked" >
+
+								<li ng-repeat="serie in motimage">
+									<button type="button" class="btn btn-info menu-item" ng-click="initialise($index)">série {{$index+1}}</button> <div ng-class="prenomMotImage[($index)]"></div>
+								</li>
+
+
+
+						</ul>
+						<div><button type="button" class="btn btn-default" ng-click="effacer()">Effacer</button>
+						</div>
+					</div>
+				</div>
+				</div>
+			</div>
+
+</div> <!-- ferme col-md-3 -->
+
+
+<div class="col-lg-9 col-md-8 col-sm-8">
+
+
+<div id="bravo" class="alert alert-success" role="alert">
+	<strong>Bravo!</strong> Tu as réussi.
+</div>
+
+<div id="bilan" class="alert alert-info text-center" role="alert">
+	<strong>Bilan : {{score}} / {{k}}</strong> avec {{nbErreur}} erreur{{s}}. <div class="circle" ng-class="prenomMotImage[serie]"></div>
+	<p><button type="button" class="btn btn-lg btn-primary" ng-click="next()" id="next">Suivant</button></p>
+</div>
+
+
+<div id="bloc-central" class="bloc-central">
+<div class="col-md-6 text-center">
+
+<h1>{{serie_aleatoire[n].black}}<span class="grey">{{serie_aleatoire[n].grey}}</span></h1>
+
+</div>
+
+<div class="col-md-6 text-center">
+
+	<div id="syllabes">
+
+		<span ng-repeat="son in motimage[serie]">
+
+
+<img ng-src="{{'images/' + son.id + '.png'}}" ng-click="check(motimage[serie][$index].id)" class="image" >
+
+
+		</span>
+	</div>
+
+</div>
+
+</div>
+
+<!------------------------------------- Modal gestion erreur -------------------------------->
+
+<div id="modalError" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<div class="modal-header">
+
+				<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
+				</button>
+				<h4 class="modal-title" id="myModalLabel">Tu as fait une erreur.</h4>
+
+			</div>
+			<div class="modal-body text-center">
+
+				<h1>
+					<span class="glyphicon glyphicon-remove"></span> 
+					<img ng-src="{{'images/' + reponseEleve + '.png'}}" class="image" >
+  				</h1>
+				<h1>
+					<span class='glyphicon glyphicon-ok'></span> 
+					<img ng-src="{{'images/' + resultat + '.png'}}" class="image" >
+				</h1>
+
+
+
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-primary" data-dismiss="modal" id="refaire">Refaire <span class='glyphicon glyphicon-repeat'></span></button>
+				<button type="button" class="btn btn-default" data-dismiss="modal" ng-click="decide(false)">Continuer <span class='glyphicon glyphicon-arrow-right'></span></button>
+			</div>
+		</div>
+	</div>
+</div>
+
+</div><!-- ferme col-md-9 -->

@@ -1,0 +1,27 @@
+<div class="container" id="main"  ng-controller="CtrlListenAlphabet">
+	<div class="row" id="row">
+
+
+
+<div class="col-md-12">
+	<div class="marginTop overflowAlphabet">
+		<div>
+	<span ng-repeat="lettre in alphabet[0]" >
+		<button type="button" class="btn btn-lg btn-default majusculeAlphabet" ng-click="hear(lettre)">{{lettre}}</button>
+	</span>
+</div>
+		<div>
+	<span ng-repeat="lettre in alphabet[0]" >
+		<button type="button" class="btn btn-lg btn-default scriptAlphabet" ng-click="hear(lettre)">{{lettre}}</button>
+	</span>
+</div>
+<div>
+	<span ng-repeat="lettre in alphabet[0]" >
+		<button type="button" class="btn btn-lg btn-default attacheAlphabet" ng-click="hear(lettre)">{{lettre}}</button>
+	</span>
+</div>
+</div>
+
+</div>
+
+</div><!-- ferme col-md-12 -->

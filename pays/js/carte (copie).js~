@@ -1,0 +1,1769 @@
+$(function(){
+  
+	$maparea = $(".maparea6");
+	// Example #6
+	$maparea.mapael({
+		map : {
+			name : "world_countries",
+			defaultArea: {
+				attrs : {
+					stroke : "gray",
+					fill : "#fff", // couleur des pays
+					"stroke-width" : 1
+				}
+				, attrsHover : {
+					fill : "#f38a03"
+					, animDuration : 300
+				}
+			}
+			, zoom : {
+				enabled : true
+				, step : 0.75
+				, maxLevel : 10
+			}
+		},
+
+
+		areas: {
+			"AF": {
+				"value": "35320445",
+				"tooltip": {
+					"content": "Afghanistan"
+				}
+			},
+			"ZA": {
+				"value": "50586757",
+				"tooltip": {
+					"content": "South Africa"
+				}
+			},
+			"AL": {
+				"value": "3215988",
+				"tooltip": {
+					"content": "Albania"
+				}
+			},
+			"DZ": {
+				"value": "35980193",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Algeria"
+				}
+			},
+			"DE": {
+				"value": "81726000",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Germany"
+				}
+			},
+			"AD": {
+				"value": "86165",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Andorra"
+				}
+			},
+			"AO": {
+				"value": "19618432",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Angola"
+				}
+			},
+			"AG": {
+				"value": "89612",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Antigua And Barbuda"
+				}
+			},
+			"SA": {
+				"value": "28082541",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Saudi Arabia"
+				}
+			},
+			"AR": {
+				"value": "40764561",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Argentina"
+				}
+			},
+			"AM": {
+				"value": "3100236",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Armenia"
+				}
+			},
+			"AU": {
+				"value": "22620600",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Australia"
+				}
+			},
+			"AT": {
+				"value": "8419000",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Austria"
+				}
+			},
+			"AZ": {
+				"value": "9168000",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Azerbaijan"
+				}
+			},
+			"BS": {
+				"value": "347176",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Bahamas"
+				}
+			},
+			"BH": {
+				"value": "1323535",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Bahrain"
+				}
+			},
+			"BD": {
+				"value": "150493658",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Bangladesh"
+				}
+			},
+			"BB": {
+				"value": "273925",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Barbados"
+				}
+			},
+			"BE": {
+				"value": "11008000",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Belgium"
+				}
+			},
+			"BZ": {
+				"value": "356600",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Belize"
+				}
+			},
+			"BJ": {
+				"value": "9099922",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Benin"
+				}
+			},
+			"BT": {
+				"value": "738267",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Bhutan"
+				}
+			},
+			"BY": {
+				"value": "9473000",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Belarus"
+				}
+			},
+			"MM": {
+				"value": "48336763",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Myanmar"
+				}
+			},
+			"BO": {
+				"value": "10088108",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Bolivia, Plurinational State Of"
+				}
+			},
+			"BA": {
+				"value": "3752228",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Bosnia And Herzegovina"
+				}
+			},
+			"BW": {
+				"value": "2030738",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Botswana"
+				}
+			},
+			"BR": {
+				"value": "196655014",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Brazil"
+				}
+			},
+			"BN": {
+				"value": "405938",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Brunei Darussalam"
+				}
+			},
+			"BG": {
+				"value": "7476000",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Bulgaria"
+				}
+			},
+			"BF": {
+				"value": "16967845",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Burkina Faso"
+				}
+			},
+			"BI": {
+				"value": "8575172",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Burundi"
+				}
+			},
+			"KH": {
+				"value": "14305183",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Cambodia"
+				}
+			},
+			"CM": {
+				"value": "20030362",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Cameroon"
+				}
+			},
+			"CA": {
+				"value": "34482779",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Canada"
+				}
+			},
+			"CV": {
+				"value": "500585",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Cape Verde"
+				}
+			},
+			"CF": {
+				"value": "4486837",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Central African Republic"
+				}
+			},
+			"CL": {
+				"value": "17269525",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Chile"
+				}
+			},
+			"CN": {
+				"value": "1344130000",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "China"
+				}
+			},
+			"CY": {
+				"value": "1116564",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Cyprus"
+				}
+			},
+			"CO": {
+				"value": "46927125",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Colombia"
+				}
+			},
+			"KM": {
+				"value": "753943",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Comoros"
+				}
+			},
+			"CG": {
+				"value": "4139748",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Congo"
+				}
+			},
+			"CD": {
+				"value": "67757577",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Congo, The Democratic Republic Of The"
+				}
+			},
+			"KP": {
+				"value": "24451285",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Korea, Democratic People's Republic Of"
+				}
+			},
+			"KR": {
+				"value": "49779000",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Korea, Republic Of"
+				}
+			},
+			"CR": {
+				"value": "4726575",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Costa Rica"
+				}
+			},
+			"CI": {
+				"value": "20152894",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "C\u00d4te D'ivoire"
+				}
+			},
+			"HR": {
+				"value": "4407000",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Croatia"
+				}
+			},
+			"CU": {
+				"value": "11253665",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Cuba"
+				}
+			},
+			"DK": {
+				"value": "5574000",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Denmark"
+				}
+			},
+			"DJ": {
+				"value": "905564",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Djibouti"
+				}
+			},
+			"DM": {
+				"value": "67675",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Dominica"
+				}
+			},
+			"EG": {
+				"value": "82536770",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Egypt"
+				}
+			},
+			"AE": {
+				"value": "7890924",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "United Arab Emirates"
+				}
+			},
+			"EC": {
+				"value": "14666055",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Ecuador"
+				}
+			},
+			"ER": {
+				"value": "5415280",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Eritrea"
+				}
+			},
+			"ES": {
+				"value": "46235000",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Spain"
+				}
+			},
+			"EE": {
+				"value": "1340000",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Estonia"
+				}
+			},
+			"US": {
+				"value": "311591917",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "United States"
+				}
+			},
+			"ET": {
+				"value": "84734262",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Ethiopia"
+				}
+			},
+			"FJ": {
+				"value": "868406",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Fiji"
+				}
+			},
+			"FI": {
+				"value": "5387000",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Finland"
+				}
+			},
+			"FR": {
+				"value": "65436552",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "France"
+				}
+			},
+			"GA": {
+				"value": "1534262",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Gabon"
+				}
+			},
+			"GM": {
+				"value": "1776103",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Gambia"
+				}
+			},
+			"GE": {
+				"value": "4486000",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Georgia"
+				}
+			},
+			"GH": {
+				"value": "24965816",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Ghana"
+				}
+			},
+			"GR": {
+				"value": "11304000",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Greece"
+				}
+			},
+			"GD": {
+				"value": "104890",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Grenada"
+				}
+			},
+			"GT": {
+				"value": "14757316",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Guatemala"
+				}
+			},
+			"GN": {
+				"value": "10221808",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Guinea"
+				}
+			},
+			"GQ": {
+				"value": "720213",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Equatorial Guinea"
+				}
+			},
+			"GW": {
+				"value": "1547061",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Guinea-bissau"
+				}
+			},
+			"GY": {
+				"value": "756040",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Guyana"
+				}
+			},
+			"HT": {
+				"value": "10123787",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Haiti"
+				}
+			},
+			"HN": {
+				"value": "7754687",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Honduras"
+				}
+			},
+			"HU": {
+				"value": "9971000",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Hungary"
+				}
+			},
+			"JM": {
+				"value": "2709300",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Jamaica"
+				}
+			},
+			"JP": {
+				"value": "127817277",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Japan"
+				}
+			},
+			"MH": {
+				"value": "54816",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Marshall Islands"
+				}
+			},
+			"PW": {
+				"value": "20609",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Palau"
+				}
+			},
+			"SB": {
+				"value": "552267",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Solomon Islands"
+				}
+			},
+			"IN": {
+				"value": "1241491960",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "India"
+				}
+			},
+			"ID": {
+				"value": "242325638",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Indonesia"
+				}
+			},
+			"JO": {
+				"value": "6181000",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Jordan"
+				}
+			},
+			"IR": {
+				"value": "74798599",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Iran, Islamic Republic Of"
+				}
+			},
+			"IQ": {
+				"value": "32961959",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Iraq"
+				}
+			},
+			"IE": {
+				"value": "4487000",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Ireland"
+				}
+			},
+			"IS": {
+				"value": "319000",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Iceland"
+				}
+			},
+			"IL": {
+				"value": "7765700",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Israel"
+				}
+			},
+			"IT": {
+				"value": "60770000",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Italy"
+				}
+			},
+			"KZ": {
+				"value": "16558459",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Kazakhstan"
+				}
+			},
+			"KE": {
+				"value": "41609728",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Kenya"
+				}
+			},
+			"KG": {
+				"value": "5507000",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Kyrgyzstan"
+				}
+			},
+			"KI": {
+				"value": "101093",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Kiribati"
+				}
+			},
+			"KW": {
+				"value": "2818042",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Kuwait"
+				}
+			},
+			"LA": {
+				"value": "6288037",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Lao People's Democratic Republic"
+				}
+			},
+			"LS": {
+				"value": "2193843",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Lesotho"
+				}
+			},
+			"LV": {
+				"value": "2220000",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Latvia"
+				}
+			},
+			"LB": {
+				"value": "4259405",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Lebanon"
+				}
+			},
+			"LR": {
+				"value": "4128572",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Liberia"
+				}
+			},
+			"LY": {
+				"value": "6422772",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Libya"
+				}
+			},
+			"LI": {
+				"value": "36304",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Liechtenstein"
+				}
+			},
+			"LT": {
+				"value": "3203000",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Lithuania"
+				}
+			},
+			"LU": {
+				"value": "517000",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Luxembourg"
+				}
+			},
+			"MK": {
+				"value": "2063893",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Macedonia, The Former Yugoslav Republic Of"
+				}
+			},
+			"MG": {
+				"value": "21315135",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Madagascar"
+				}
+			},
+			"MY": {
+				"value": "28859154",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Malaysia"
+				}
+			},
+			"MW": {
+				"value": "15380888",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Malawi"
+				}
+			},
+			"MV": {
+				"value": "320081",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Maldives"
+				}
+			},
+			"ML": {
+				"value": "15839538",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Mali"
+				}
+			},
+			"MT": {
+				"value": "419000",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Malta"
+				}
+			},
+			"MA": {
+				"value": "32272974",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Morocco"
+				}
+			},
+			"MU": {
+				"value": "1286051",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Mauritius"
+				}
+			},
+			"MR": {
+				"value": "3541540",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Mauritania"
+				}
+			},
+			"MX": {
+				"value": "114793341",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Mexico"
+				}
+			},
+			"FM": {
+				"value": "111542",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Micronesia, Federated States Of"
+				}
+			},
+			"MD": {
+				"value": "3559000",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Moldova, Republic Of"
+				}
+			},
+			"MC": {
+				"value": "35427",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Monaco"
+				}
+			},
+			"MN": {
+				"value": "2800114",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Mongolia"
+				}
+			},
+			"ME": {
+				"value": "632261",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Montenegro"
+				}
+			},
+			"MZ": {
+				"value": "23929708",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Mozambique"
+				}
+			},
+			"NA": {
+				"value": "2324004",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Namibia"
+				}
+			},
+			"NP": {
+				"value": "30485798",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Nepal"
+				}
+			},
+			"NI": {
+				"value": "5869859",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Nicaragua"
+				}
+			},
+			"NE": {
+				"value": "16068994",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Niger"
+				}
+			},
+			"NG": {
+				"value": "162470737",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Nigeria"
+				}
+			},
+			"NO": {
+				"value": "4952000",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Norway"
+				}
+			},
+			"NZ": {
+				"value": "4405200",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "New Zealand"
+				}
+			},
+			"OM": {
+				"value": "2846145",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Oman"
+				}
+			},
+			"UG": {
+				"value": "34509205",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Uganda"
+				}
+			},
+			"UZ": {
+				"value": "29341200",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Uzbekistan"
+				}
+			},
+			"PK": {
+				"value": "176745364",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Pakistan"
+				}
+			},
+			"PS": {
+				"value": "4019433",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Palestine, State Of"
+				}
+			},
+			"PA": {
+				"value": "3571185",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Panama"
+				}
+			},
+			"PG": {
+				"value": "7013829",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Papua New Guinea"
+				}
+			},
+			"PY": {
+				"value": "6568290",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Paraguay"
+				}
+			},
+			"NL": {
+				"value": "16696000",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Netherlands"
+				}
+			},
+			"PE": {
+				"value": "29399817",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Peru"
+				}
+			},
+			"PH": {
+				"value": "94852030",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Philippines"
+				}
+			},
+			"PL": {
+				"value": "38216000",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Poland"
+				}
+			},
+			"PT": {
+				"value": "10637000",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Portugal"
+				}
+			},
+			"QA": {
+				"value": "1870041",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Qatar"
+				}
+			},
+			"DO": {
+				"value": "10056181",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Dominican Republic"
+				}
+			},
+			"RO": {
+				"value": "21390000",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Romania"
+				}
+			},
+			"GB": {
+				"value": "62641000",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "United Kingdom"
+				}
+			},
+			"RU": {
+				"value": "141930000",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Russian Federation"
+				}
+			},
+			"RW": {
+				"value": "10942950",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Rwanda"
+				}
+			},
+			"KN": {
+				"value": "53051",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Saint Kitts And Nevis"
+				}
+			},
+			"SM": {
+				"value": "31735",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "San Marino"
+				}
+			},
+			"VC": {
+				"value": "109365",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Saint Vincent And The Grenadines"
+				}
+			},
+			"LC": {
+				"value": "176000",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Saint Lucia"
+				}
+			},
+			"SV": {
+				"value": "6227491",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "El Salvador"
+				}
+			},
+			"WS": {
+				"value": "183874",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Samoa"
+				}
+			},
+			"ST": {
+				"value": "168526",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Sao Tome And Principe"
+				}
+			},
+			"SN": {
+				"value": "12767556",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Senegal"
+				}
+			},
+			"RS": {
+				"value": "7261000",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Serbia"
+				}
+			},
+			"SC": {
+				"value": "86000",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Seychelles"
+				}
+			},
+			"SL": {
+				"value": "5997486",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Sierra Leone"
+				}
+			},
+			"SG": {
+				"value": "5183700",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Singapore"
+				}
+			},
+			"SK": {
+				"value": "5440000",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Slovakia"
+				}
+			},
+			"SI": {
+				"value": "2052000",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Slovenia"
+				}
+			},
+			"SO": {
+				"value": "9556873",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Somalia"
+				}
+			},
+			"SD": {
+				"value": "34318385",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Sudan"
+				}
+			},
+			"SS": {
+				"value": "10314021",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "South Sudan"
+				}
+			},
+			"LK": {
+				"value": "20869000",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Sri Lanka"
+				}
+			},
+			"SE": {
+				"value": "9453000",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Sweden"
+				}
+			},
+			"CH": {
+				"value": "7907000",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Switzerland"
+				}
+			},
+			"SR": {
+				"value": "529419",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Suriname"
+				}
+			},
+			"SZ": {
+				"value": "1067773",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Swaziland"
+				}
+			},
+			"SY": {
+				"value": "20820311",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Syrian Arab Republic"
+				}
+			},
+			"TJ": {
+				"value": "6976958",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Tajikistan"
+				}
+			},
+			"TZ": {
+				"value": "46218486",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Tanzania, United Republic Of"
+				}
+			},
+			"TD": {
+				"value": "11525496",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Chad"
+				}
+			},
+			"CZ": {
+				"value": "10546000",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Czech Republic"
+				}
+			},
+			"TH": {
+				"value": "69518555",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Thailand"
+				}
+			},
+			"TL": {
+				"value": "1175880",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Timor-leste"
+				}
+			},
+			"TG": {
+				"value": "6154813",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Togo"
+				}
+			},
+			"TO": {
+				"value": "104509",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Tonga"
+				}
+			},
+			"TT": {
+				"value": "1346350",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Trinidad And Tobago"
+				}
+			},
+			"TN": {
+				"value": "10673800",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Tunisia"
+				}
+			},
+			"TM": {
+				"value": "5105301",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Turkmenistan"
+				}
+			},
+			"TR": {
+				"value": "73639596",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Turkey"
+				}
+			},
+			"TV": {
+				"value": "9847",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Tuvalu"
+				}
+			},
+			"VU": {
+				"value": "245619",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Vanuatu"
+				}
+			},
+			"VE": {
+				"value": "29278000",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Venezuela, Bolivarian Republic Of"
+				}
+			},
+			"VN": {
+				"value": "87840000",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Viet Nam"
+				}
+			},
+			"UA": {
+				"value": "45706100",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Ukraine"
+				}
+			},
+			"UY": {
+				"value": "3368595",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Uruguay"
+				}
+			},
+			"YE": {
+				"value": "24799880",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Yemen"
+				}
+			},
+			"ZM": {
+				"value": "13474959",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Zambia"
+				}
+			},
+			"ZW": {
+				"value": "12754378",
+				"attrs": {
+					"href": "#"
+				},
+				"tooltip": {
+					"content": "Zimbabwe"
+				}
+			}
+		}
+	});
+	
+	$maparea.on("mousewheel", function(e) {
+		if (e.deltaY > 0)
+			$maparea.trigger("zoom", $maparea.data("zoomLevel") + 1);
+		else
+			$maparea.trigger("zoom", $maparea.data("zoomLevel") - 1);
+			
+		return false;
+	});
+
+
+});

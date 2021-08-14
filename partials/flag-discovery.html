@@ -1,0 +1,26 @@
+<div class="container-fluid" id="main"  ng-controller="CtrlFlagDiscovery">
+<h1>Découverte des drapeaux</h1>
+	<div class="tableau-series">
+		<div ng-repeat="serie in drapeaux">
+				<h2><b>série {{$index+1}} :</b>
+
+					<div class="row">
+
+						<div ng-repeat="son in serie" class="col-sm-4 col-md-2">
+
+							<div class="thumbnail">
+
+								<img ng-src="{{'flags/' + son.id + '.png'}}" class="drapo" >
+
+								<div class="caption">
+									<h3 class="center">
+										{{son.name}}
+									</h3>
+								</div>
+							</div>
+						</div>
+					</h2>
+				</div>
+			</div>
+		</div>
+	</div>

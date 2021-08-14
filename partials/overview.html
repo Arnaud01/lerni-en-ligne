@@ -1,0 +1,174 @@
+<div class="container-fluid" id="main"  ng-controller="CtrlOverview">
+	<div class="row" id="row">
+
+<div class="container-fluid">
+
+
+
+			<table class="table table-bordered">
+				<caption>Lire les syllabes</caption>
+
+			<tr>	<td>séries</td>
+
+				<td ng-repeat="serie in syllabes" class="center">{{$index+1}}</td>
+
+			</tr>
+
+			<tr><td></td><td ng-repeat="serie in syllabes" class="center">
+				<div class="circle" ng-class="prenomLireSyllabes[(($index+1)*3 - 2)-1]"></div>
+				<div class="circle" ng-class="prenomLireSyllabes[(($index+1)*3 - 1)-1]"></div>
+				<div class="circle" ng-class="prenomLireSyllabes[(($index+1)*3)-1]"></div>
+			</td></tr>
+			</table>
+
+
+
+
+			<table class="table table-bordered">
+				<caption>Écrire les syllabes</caption>
+			<tr><td>séries</td><td ng-repeat="serie in syllabes" class="center">{{$index+1}}</td></tr>
+			<tr><td></td><td ng-repeat="serie in syllabes" class="center">
+				<div class="circle" ng-class="prenomEcrireSyllabes[$index]"></div>
+			</td></tr>
+			</table>
+
+
+			<table class="table table-bordered">
+				<caption>Lire les mots</caption>
+
+			<tr>	<td>séries</td>
+
+				<td ng-repeat="serie in mots" class="center">{{$index+1}}</td>
+
+			</tr>
+
+			<tr><td></td><td ng-repeat="serie in mots" class="center">
+				<div class="circle" ng-class="prenomLireMots[(($index+1)*3 - 2)-1]"></div>
+				<div class="circle" ng-class="prenomLireMots[(($index+1)*3 - 1)-1]"></div>
+				<div class="circle" ng-class="prenomLireMots[(($index+1)*3)-1]"></div>
+			</td></tr>
+			</table>
+
+
+
+			<table class="table table-bordered">
+				<caption>Écrire les mots</caption>
+			<tr><td>séries</td><td ng-repeat="serie in mots" class="center">{{$index+1}}</td></tr>
+			<tr><td></td><td ng-repeat="serie in mots" class="center">
+				<div class="circle" ng-class="prenomEcrireMots[$index]"></div>
+			</td></tr>
+			</table>
+
+
+
+			<table class="table table-bordered">
+				<caption>Lis le mot et clique sur l'image</caption>
+			<tr><td>séries</td><td ng-repeat="serie in motimage" class="center">{{$index+1}}</td></tr>
+			<tr><td></td><td ng-repeat="serie in motimage" class="center">
+				<div class="circle" ng-class="prenomMotImage[$index]"></div>
+			</td></tr>
+			</table>
+
+
+			<table class="table table-bordered">
+				<caption>Écrire le mot sur l'image</caption>
+			<tr><td>séries</td><td ng-repeat="serie in images" class="center">{{$index+1}}</td></tr>
+			<tr><td></td><td ng-repeat="serie in images" class="center">
+				<div class="circle" ng-class="prenomEcrireImages[$index]"></div>
+			</td></tr>
+			</table>
+
+
+			<table class="table table-bordered">
+				<caption>Lire les lettres</caption>
+
+			<tr>	<td>séries</td>
+
+				<td ng-repeat="serie in lettres" class="center">{{$index+1}}</td>
+
+			</tr>
+
+			<tr><td></td><td ng-repeat="serie in lettres" class="center">
+				<div class="circle" ng-class="prenomLireLettres[(($index+1)*3 - 2)-1]"></div>
+				<div class="circle" ng-class="prenomLireLettres[(($index+1)*3 - 1)-1]"></div>
+				<div class="circle" ng-class="prenomLireLettres[(($index+1)*3)-1]"></div>
+			</td></tr>
+			</table>
+
+
+
+			<table class="table table-bordered">
+				<caption>Écrire les lettres</caption>
+			<tr><td>séries</td><td ng-repeat="serie in lettres" class="center">{{$index+1}}</td></tr>
+			<tr><td></td><td ng-repeat="serie in lettres" class="center">
+				<div class="circle" ng-class="prenomEcrireLettres[$index]"></div>
+			</td></tr>
+			</table>
+
+			<table class="table table-bordered">
+				<caption>Lire les nombres</caption>
+			<tr><td>séries</td><td ng-repeat="serie in nombres" class="center">{{$index+1}}</td></tr>
+			<tr><td></td><td ng-repeat="serie in nombres" class="center">
+				<div class="circle" ng-class="prenomLireNombres[$index]"></div>
+			</td></tr>
+			</table>
+
+			<table class="table table-bordered">
+				<caption>Écrire les nombres</caption>
+			<tr><td>séries</td><td ng-repeat="serie in nombres" class="center">{{$index+1}}</td></tr>
+			<tr><td></td><td ng-repeat="serie in nombres" class="center">
+				<div class="circle" ng-class="prenomEcrireNombres[$index]"></div>
+			</td></tr>
+			</table>
+
+
+			<table class="table table-bordered">
+				<caption>Additions</caption>
+			<tr><td>séries</td><td ng-repeat="serie in additions" class="center">{{$index+1}}</td></tr>
+			<tr><td></td><td ng-repeat="serie in additions" class="center">
+				<div class="circle" ng-class="prenomCalculAdditions[$index]"></div>
+			</td></tr>
+			</table>
+
+			<table class="table table-bordered">
+				<caption>Soustractions</caption>
+			<tr><td>séries</td><td ng-repeat="serie in soustractions" class="center">{{$index+1}}</td></tr>
+			<tr><td></td><td ng-repeat="serie in soustractions" class="center">
+				<div class="circle" ng-class="prenomCalculSoustractions[$index]"></div>
+			</td></tr>
+			</table>
+
+
+			<table class="table table-bordered">
+				<caption>Tables d'addition</caption>
+			<tr><td>séries</td><td ng-repeat="serie in tablesaddition" class="center">{{$index+1}}</td></tr>
+			<tr><td></td><td ng-repeat="serie in tablesaddition" class="center">
+				<div class="circle" ng-class="prenomTablesAddition[$index]"></div>
+			</td></tr>
+			</table>
+
+			<table class="table table-bordered">
+				<caption>Tables de multiplication</caption>
+			<tr><td>séries</td><td ng-repeat="serie in tablesmultiplication" class="center">{{$index+1}}</td></tr>
+			<tr><td></td><td ng-repeat="serie in tablesmultiplication" class="center">
+				<div class="circle" ng-class="prenomTablesMultiplication[$index]"></div>
+			</td></tr>
+			</table>
+
+			<table class="table table-bordered">
+				<caption>Lexique en français</caption>
+			<tr><td>séries</td><td ng-repeat="serie in images" class="center">{{$index+1}}</td></tr>
+			<tr><td></td><td ng-repeat="serie in images" class="center">
+				<div class="circle" ng-class="prenomLexiqueFr[$index]"></div>
+			</td></tr>
+			</table>
+
+			<table class="table table-bordered">
+				<caption>Lexique en anglais</caption>
+			<tr><td>séries</td><td ng-repeat="serie in imagesen" class="center">{{$index+1}}</td></tr>
+			<tr><td></td><td ng-repeat="serie in imagesen" class="center">
+				<div class="circle" ng-class="prenomLexiqueEn[$index]"></div>
+			</td></tr>
+			</table>
+
+</div>
