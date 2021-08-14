@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="fr" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="fr" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="fr" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="fr" ng-app="myApp" xmlns:ng="http://angularjs.org" class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Lerni</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/css/normalize.css">
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/css/main.css">
+  <link rel="stylesheet" href="css/app.css"/>
+  <link rel="stylesheet" href="css/jquery-ui.css"/>
+  <script src="bower_components/html5-boilerplate/js/vendor/modernizr-2.6.2.min.js"></script>
+</head>
+
+<body ng-controller="Ctrl">
+
+<!------------------------------------- barre de navigation en haut -------------------------------->
+
+<div class="navbar navbar-default" role="navigation">
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".menu1">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" ng-class="getClass('/home')" href="#/home"><span class="glyphicon glyphicon-home"></span></a>
+		</div>
+		<div class="navbar-collapse collapse menu1">
+			<ul class="nav navbar-nav">
+<!--
+				<li ng-class="getClass('/listenImages')" class="dropdown">
+				  <a href="#/listenImages" class="dropdown-toggle" data-toggle="dropdown">Écouter <span class="glyphicon glyphicon-headphones"></span> <span class="caret"></span></a>
+				  <ul class="dropdown-menu" role="menu">
+					<li ng-class="getClass('/listenImages')"><a href="#/listenImages">Images</a></li>
+					<li ng-class="getClass('/listenSyllables')"><a href="#/listenSyllables">Syllabes</a></li>
+					<li ng-class="getClass('/listenWords')"><a href="#/listenWords">Mots</a></li>
+                    <li ng-class="getClass('/listenAlphabet')"><a href="#/listenAlphabet">Alphabet</a></li>
+                    <li ng-class="getClass('/listenImagesEn')"><a href="#/listenImagesEn"><img src="css/flag.png" /></a></li>
+				  </ul>
+				</li>
+-->
+				<li ng-class="getClass('/listenSyllables')" class="dropdown">
+				  <a href="#/listenSyllables" class="dropdown-toggle" data-toggle="dropdown">Syllabes <span class="caret"></span></a>
+				  <ul class="dropdown-menu" role="menu">
+                     <li ng-class="getClass('/listenSyllables')"><a href="#/listenSyllables">Écouter  <span class="glyphicon glyphicon-headphones"></span></a></li>
+					<li ng-class="getClass('/readSyllables')"><a href="#/readSyllables">Lire <span class="glyphicon glyphicon-book"></span></a></li>
+                    <li ng-class="getClass('/writeSyllables')"><a href="#/writeSyllables">Écrire <span class="glyphicon glyphicon-pencil"></span></a></li>
+
+
+                    <!--
+                    <li ng-class="getClass('/matchWordImage')"><a href="#/matchWordImage">Associer</a></li>
+                -->
+
+				  </ul>
+				</li>
+
+
+
+				<li ng-class="getClass('/listenWords')" class="dropdown">
+				  <a href="#/listenWords" class="dropdown-toggle" data-toggle="dropdown">Mots <span class="caret"></span></a>
+				  <ul class="dropdown-menu" role="menu">
+                      <li ng-class="getClass('/listenWords')"><a href="#/listenWords">Écouter  <span class="glyphicon glyphicon-headphones"></span></a></li>
+                <li ng-class="getClass('/readWords')"><a href="#/readWords">Lire <span class="glyphicon glyphicon-book"></span></a></li>
+		<li ng-class="getClass('/writeWords')"><a href="#/writeWords">Écrire <span class="glyphicon glyphicon-pencil"></span></a></li>
+		<li ng-class="getClass('/wordImage')"><a href="#/wordImage">Lire le mot <span class="glyphicon glyphicon-book"></span> <span class="glyphicon glyphicon-picture"></span></a></li>
+		<li ng-class="getClass('/imageWord')"><a href="#/imageWord">Choisis le mot <span class="glyphicon glyphicon-book"></span> <span class="glyphicon glyphicon-picture"></span></a></li>
+		<li ng-class="getClass('/writeImages')"><a href="#/writeImages">Écrire l'image <span class="glyphicon glyphicon-picture"></span> <span class="glyphicon glyphicon-pencil"></span></a></li>
+				  </ul>
+				</li>
+
+                <li ng-class="getClass('/listenLetters')" class="dropdown">
+				  <a href="#/listenLetters" class="dropdown-toggle" data-toggle="dropdown">Lettres <span class="glyphicon glyphicon-sort-by-alphabet"></span> <span class="caret"></span></a>
+				  <ul class="dropdown-menu" role="menu">
+                    <li ng-class="getClass('/listenLetters')"><a href="#/listenLetters">Écouter  <span class="glyphicon glyphicon-headphones"></span></a></li>
+                    <li ng-class="getClass('/readLetters')"><a href="#/readLetters">Lire <span class="glyphicon glyphicon-book"></span></a></li>
+					<li ng-class="getClass('/writeLetters')"><a href="#/writeLetters">Écrire <span class="glyphicon glyphicon-pencil"></span></a></li>
+                    <li ng-class="getClass('/listenAlphabet')"><a href="#/listenAlphabet">Alphabet <span class="glyphicon glyphicon-sort-by-alphabet"></span></a></li>
+
+
+				  </ul>
+				</li>
+
+				<li ng-class="getClass('/listenNumbers')" class="dropdown">
+				  <a href="#/listenNumbers" class="dropdown-toggle" data-toggle="dropdown">Nombres <span class="glyphicon glyphicon-sort-by-order"></span> <span class="caret"></span></a>
+				  <ul class="dropdown-menu" role="menu">
+                    <li ng-class="getClass('/listenNumbers')"><a href="#/listenNumbers">Écouter  <span class="glyphicon glyphicon-headphones"></span></a></li>
+					<li ng-class="getClass('/readNumbers')"><a href="#/readNumbers">Lire <span class="glyphicon glyphicon-book"></span></a></li>
+					<li ng-class="getClass('/writeNumbers')"><a href="#/writeNumbers">Écrire <span class="glyphicon glyphicon-pencil"></span></a></li>
+					<li ng-class="getClass('/listenLineNumbers')"><a href="#/listenLineNumbers">File numérique</a></li>
+                    <li ng-class="getClass('/listenTableNumbers')"><a href="#/listenTableNumbers">Tableau des nombres</a></li>
+                    <li ng-class="getClass('/listenFamilyNumbers')"><a href="#/listenFamilyNumbers">Familles des nombres</a></li>
+				  </ul>
+				</li>
+
+				<li ng-class="getClass('/calculAdditions')" class="dropdown">
+                    <a href="#/calculAdditions" class="dropdown-toggle" data-toggle="dropdown">Calcul <span class="glyphicon glyphicon-plus-sign"></span> <span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                      <li ng-class="getClass('/calculAdditions')"><a href="#/calculAdditions">Additions <span class="glyphicon glyphicon-plus-sign"></span></a></li>
+                       <li ng-class="getClass('/calculSoustractions')"><a href="#/calculSoustractions">Soustractions <span class="glyphicon glyphicon-minus-sign"></span></a></li>
+                      <li ng-class="getClass('/tablesAddition')"><a href="#/tablesAddition">Tables d'addition <span class="glyphicon glyphicon-plus-sign"></span></a></li>
+                      <li ng-class="getClass('/tablesMultiplication')"><a href="#/tablesMultiplication">Tables de multiplication <span class="glyphicon glyphicon-remove-sign"></span></a></li>
+                    </ul>
+                </li>
+
+                <li ng-class="getClass('/listenImages')" class="dropdown">
+                  <a href="#/listenImages" class="dropdown-toggle" data-toggle="dropdown">Langues <span class="glyphicon glyphicon-headphones"></span> <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li ng-class="getClass('/listenImages')"><a href="#/listenImages"><img src="css/fr.png" /> Français</a></li>
+                    <li ng-class="getClass('/lexiconFr')"><a href="#/lexiconFr"><img src="css/fr.png" /> Lexique en français</a></li>
+                    <li ng-class="getClass('/listenImagesEn')"><a href="#/listenImagesEn"><img src="css/uk.png" /> Anglais</a></li>
+		    <li ng-class="getClass('/lexiconEn')"><a href="#/lexiconEn"><img src="css/uk.png" /> Lexique en anglais</a></li>
+                  </ul>
+                </li>
+
+                <li ng-class="getClass('/wordFlag')" class="dropdown">
+                  <a href="#/wordFlag" class="dropdown-toggle" data-toggle="dropdown">Pays <span class="glyphicon glyphicon-globe"></span> <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li ng-class="getClass('/flagDiscovery')"><a href="#/flagDiscovery">Découverte des drapeaux <span class="glyphicon glyphicon-flag"></span></a></li>
+                    <li ng-class="getClass('/wordFlag')"><a href="#/wordFlag">Drapeaux <span class="glyphicon glyphicon-flag"></span></a></li>
+		<li ng-class="getClass('/writeCountries')"><a href="#/writeCountries">Écrire les pays <span class="glyphicon glyphicon-flag"></span></a></li>
+                    <li><a href="pays/index.html">Géographie <span class="glyphicon glyphicon-globe"></span></a></li>
+                  </ul>
+                </li>
+
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+				<li ng-cloak><a href="#/overview"><span class="glyphicon glyphicon-user"></span> {{prenomActuel}}</a></li>
+				<li><a href="#/home" data-toggle="modal" data-target="#myModal">Changer <span class="glyphicon glyphicon-refresh"></span></a></li>
+			</ul>
+
+		</div>
+	</div>
+</div>
+
+<!--[if lt IE 7]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+
+
+		<div id="idview" ng-view></div> <!-- ajoute col-md-9 -->
+
+
+<!------------------------------------- Modal login -------------------------------->
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+
+				<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
+				</button>
+				<h4 class="modal-title" id="myModalLabel">Clique sur ton étiquette ou écris ton prénom.</h4>
+
+			</div>
+			<div class="modal-body">
+				<p><button href="#" ng-repeat="item in $storage.prenoms" data-dismiss="modal" class="btn btn-lg btn-primary" ng-click="choixPrenom(item)">{{item}}</button>
+				</p>
+				<p><form ng-submit="ajoute(prenom);" autocomplete="off"><input type="text" value="place" name="inputprenom" id="inputprenom" ng-model="prenom" size="10" maxlength="25" /> <input type="submit" value="Ajoute ton prénom" class="btn btn-default" /></form>
+				</p>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="bower_components/angular/angular.min.js"></script>
+  <script src="js/angular-touch.min.js"></script>
+  <script src="js/angular-dragdrop.min.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="bower_components/ngstorage/ngStorage.min.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/services.js"></script>
+  <script src="js/controller.js"></script>
+  <script src="js/controller-read-syllables.js"></script>
+  <script src="js/controller-read-letters.js"></script>
+  <script src="js/controller-read-words.js"></script>
+  <script src="js/controller-word-image.js"></script>
+  <script src="js/controller-image-word.js"></script>
+  <script src="js/controller-word-flag.js"></script>
+  <script src="js/controller-flag-discovery.js"></script>
+  <script src="js/controller-listen-numbers.js"></script>
+  <script src="js/controller-read-numbers.js"></script>
+  <script src="js/controller-write-numbers.js"></script>
+  <script src="js/controller-write-syllables.js"></script>
+  <script src="js/controller-write-letters.js"></script>
+  <script src="js/controller-write-words.js"></script>
+  <script src="js/controller-write-images.js"></script>
+  <script src="js/controller-write-countries.js"></script>
+  <script src="js/controller-listen-images.js"></script>
+  <script src="js/controller-lexicon-fr.js"></script>
+  <script src="js/controller-lexicon-en.js"></script>
+  <script src="js/controller-listen-images-en.js"></script>
+  <script src="js/controller-listen-syllables.js"></script>
+  <script src="js/controller-listen-words.js"></script>
+  <script src="js/controller-listen-letters.js"></script>
+  <script src="js/controller-listen-alphabet.js"></script>
+  <script src="js/controller-listen-line-numbers.js"></script>
+  <script src="js/controller-listen-table-numbers.js"></script>
+  <script src="js/controller-listen-family-numbers.js"></script>
+  <script src="js/controller-calcul-additions.js"></script>
+  <script src="js/controller-calcul-soustractions.js"></script>
+  <script src="js/controller-tables-addition.js"></script>
+  <script src="js/controller-tables-multiplication.js"></script>
+  <script src="js/controller-overview.js"></script>
+  <script src="js/filters.js"></script>
+  <script src="js/directives.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,13 @@
+{
+  "name": "Lerni",
+  "description": "Application designed for learning",
+  "launch_path": "/index.html",
+  "icons": {
+    "128": "/icon/lerni-128.png"
+  },
+  "developer": {
+    "name": "Arnaud Limon",
+    "url": "http://lerni.fr/tablet"
+  },
+  "default_locale": "fr"
+}

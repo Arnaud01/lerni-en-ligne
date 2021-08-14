@@ -1,0 +1,38 @@
+<html>
+<head>
+	<title>Installer l'application Lerni</title>
+</head>
+<body>
+
+<p><strong><a id="install-link" href="manifest.webapp">Installer l'application Lerni !</a></strong></p>
+<p>Ceci fonctionne avec Firefox OS et Firefox pour Android.</p>
+
+
+<script type="text/javascript">
+if (navigator.mozApps) {
+    document.getElementById("install-link").addEventListener("click", function (e) {
+        e.preventDefault();
+    //    var request = navigator.mozApps.getSelf();
+
+		var request = window.navigator.mozApps.install('http://lerni.fr/tablet/manifest.webapp');
+
+        request.onsuccess = function() {
+            if (!this.result) {
+                var pathname = location.pathname;
+                var manifestName = "manifest";
+                var r = /[^\/]*$/;
+                if (pathname.endsWith(".html")) {
+                    pathname = pathname.replace(r, '');
+                }
+
+                request = navigator.mozApps.install(location.protocol + "lerni.fr/tablet/manifest.webapp");
+                request.onerror = function() {
+                    console.log("Install failed: " + this.error.name);
+                };
+            }
+        };
+    }, false);
+}
+</script>
+</body>
+</html>
