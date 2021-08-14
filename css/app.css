@@ -1,0 +1,375 @@
+/* app css stylesheet */
+
+@font-face {
+font-family: 'cursiveff';
+src: url('../polices/cursive.ttf');
+}
+
+html, body, #row, #idview, .height100 { /* indispensable pour que la hauteur de la sidebar fonctionne */
+height:100%;
+}
+
+.height50 { /* indispensable pour que la hauteur de la sidebar fonctionne */
+height:50%;
+}
+
+.overflowauto {
+    	overflow:auto;
+
+}
+
+#main {
+height:80%;
+}
+
+.navbar-static-top {
+  margin-bottom: 19px;
+}
+
+#sidebar {
+	height:400px !important;
+	overflow:auto !important;
+
+}
+
+
+.menu {
+  list-style: none;
+  border-bottom: 0.1em solid black;
+  margin-bottom: 2em;
+  padding: 0 0 0.5em;
+}
+
+.menu:before {
+  content: "[";
+}
+
+.menu:after {
+  content: "]";
+}
+
+.menu > li {
+  display: inline;
+}
+
+.menu > li:before {
+  content: "|";
+  padding-right: 0.3em;
+}
+
+.menu > li:nth-child(1):before {
+  content: "";
+  padding: 0;
+}
+
+.btn {
+	margin:4px;
+}
+
+#inputprenom {
+	font-size:2em;
+}
+
+.navbar a {
+	font-size:1.4em;
+}
+
+.bloc-central {
+	text-align:center;
+	font-size:2em;
+}
+
+#reponse {
+	width:5em;
+}
+
+#modalError.modal.fade .modal-dialog {
+  -webkit-transform: translate(0, 0%);
+  -ms-transform: translate(0, 0%);
+  transform: translate(0, 0%);
+}
+
+
+
+.deplacement {
+	padding:4px;
+	padding-top:4px;
+	margin-top:4px;
+	}
+
+.menu-item {
+	width:7em;
+}
+
+.majuscule {
+font-size: 1em;
+width:10em;
+font-family:arial,serif;
+text-transform: uppercase;
+}
+
+.script {
+font-size: 1.2em;
+width:8em;
+font-family:arial,serif;
+}
+
+.attache {
+font-family:cursiveff;
+font-size: 1.3em;
+width:7em;
+}
+
+.majusculeAlphabet {
+font-size: 1.2em;
+text-transform: uppercase;
+}
+
+.scriptAlphabet {
+font-size: 1.7em;
+font-family:arial,serif;
+}
+
+.attacheAlphabet {
+font-family:cursiveff;
+font-size: 2em;
+}
+
+.contour {
+	padding:10px;
+	border:1px #7FC6BC solid;
+	background-color:#E6E6E6;
+	border-radius:5px;
+}
+
+.etiquette {
+	padding:12px;
+	border:1px grey solid;
+	background-color:white;
+	cursor:pointer;
+}
+
+.etiquette.majuscule { /* class etiquette et majuscule */
+	width:3em;
+}
+
+.etiquette.script {
+	width:2.5em;
+}
+
+.etiquette.attache {
+	width:2em;
+}
+
+.nombre {
+	width:3em;
+	font-size:1.5em;
+}
+
+.lettre {
+	width:2em;
+	font-size:1.5em;
+}
+
+.syllabe {
+	width:5em;
+	font-size:1.5em;
+}
+
+.syllabeDrapeau {
+	width:15em;
+	font-size:1em;
+}
+
+.mot {
+	width:7em;
+}
+
+.ecrire-mot {
+	width:9em;
+}
+
+.play {
+font-size:1.5em;
+}
+
+.valign {
+    vertical-align: middle;
+}
+.green {
+background-color:green;
+width:1.5em;
+height:1.5em;
+display:inline-block;
+border-radius: 50%;
+border:1px solid black;
+}
+
+.yellow {
+background-color:yellow;
+width:1.5em;
+height:1.5em;
+display:inline-block;
+border-radius: 50%;
+border:1px solid black;
+}
+
+.orange {
+background-color:orange;
+width:1.5em;
+height:1.5em;
+display:inline-block;
+border-radius: 50%;
+border:1px solid black;
+}
+
+.red {
+background-color:red;
+width:1.5em;
+height:1.5em;
+display:inline-block;
+border-radius: 50%;
+border:1px solid black;
+}
+
+#inputEleve {
+font-size:1.6em;
+width:5em;
+height:1.4em;
+margin-top:4px;
+}
+
+#inputEleveDrapeau {
+font-size:1.6em;
+width:7em;
+height:1.4em;
+margin-top:4px;
+}
+
+.image {
+ border:1px #7FC6BC solid;
+ border-radius: 10px;
+ cursor:pointer;
+ margin:5px;
+}
+
+.imag {
+ border:1px #7FC6BC solid;
+ border-radius: 10px;
+ margin:5px;
+}
+
+.drapeau {
+ border:1px black solid;
+ cursor:pointer;
+ margin:5px;
+}
+
+.drapo {
+ border:1px black solid;
+ margin:5px;
+}
+
+.marginTop {
+	margin-top:40px;
+}
+
+.marginTop100 {
+	margin-top:100px;
+}
+
+.overflow {
+	white-space:nowrap;
+	height:100px;
+	overflow:auto;
+}
+
+.overflowAlphabet {
+	white-space:nowrap;
+	overflow:auto;
+}
+
+.cellule {
+    color : blue;
+}
+
+.cellule:hover {
+    color:blue;
+}
+
+.firstletter button::first-letter { /* Utilisez :first-letter si le support pour IE8 ou antérieur est nécessaire. */
+  color: red;
+}
+
+.texteFamille {
+    font-family: arial, sans-serif;
+    font-size:1.2em;
+}
+
+table.familles td {
+    text-align:right;
+    border:1px solid black;
+    padding:5px;
+}
+
+table.familles {
+    margin-top:10px;
+    margin-bottom:30px;
+}
+
+.center { text-align:center; }
+
+/*
+.thumbnail { height: 280px !important; }
+*/
+
+.btn-droppable {
+    width: 180px;
+    height: 70px;
+    padding-left: 5px;
+}
+
+.btn-draggable {
+    font-size:2em;
+}
+
+.emage {
+    height: 160px;
+    cursor:pointer;
+}
+
+.imgflexible {
+    max-width: 100%;
+}
+
+.thumb li {
+  display: inline-block;
+}
+
+.thumbnails li {
+  display: inline;
+}
+
+.valign {
+    vertical-align: middle;
+}
+
+.width100 {
+    width:100%;
+}
+
+.inline {
+	display:inline;
+}
+
+.inline-block {
+	display:inline-block;
+}
+
+.grey {
+color:grey;
+}
+
+.italic {
+font-style:italic;
+}
