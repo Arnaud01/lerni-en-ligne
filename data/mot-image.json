@@ -1,0 +1,102 @@
+[
+	[
+		{ "id" : "bed", "name" : "lit", "black" : "li", "grey" : "t", "url" : "lit.mp3" },
+		{ "id" : "rat", "name" : "rat", "black" : "ra", "grey" : "t", "url" : "rat.mp3" },
+		{ "id" : "back", "name" : "dos", "black" : "do", "grey" : "s", "url" : "dos.mp3" }
+	],
+	[
+		{ "id" : "cat", "name" : "chat", "black" : "cha", "grey" : "t", "url" : "chat.mp3" },
+		{ "id" : "cow", "name" : "vache", "black" : "vach", "grey" : "e", "url" : "vache.mp3" },
+		{ "id" : "apple", "name" : "pomme", "black" : "pomm", "grey" : "e", "url" : "lit.mp3" }
+	],
+	[
+		{ "id" : "horse", "name" : "cheval", "black" : "cheval", "grey" : "", "url" : "cheval.mp3" },
+		{ "id" : "hen", "name" : "poule", "black" : "poul", "grey" : "e", "url" : "poule.mp3" },
+		{ "id" : "wolf", "name" : "loup", "black" : "lou", "grey" : "p", "url" : "loup.mp3" }
+	],
+	[
+		{ "id" : "banana", "name" : "banane", "black" : "banan", "grey" : "e", "url" : "banane.ogg" },
+		{ "id" : "chocolate", "name" : "chocolat", "black" : "chocola", "grey" : "t", "url" : "chocolat.mp3" },
+		{ "id" : "magpie", "name" : "pie", "black" : "pi", "grey" : "e", "url" : "pie.mp3" }
+	],
+	[
+		{ "id" : "grape", "name" : "raisin", "black" : "raisin", "grey" : "", "url" : "raisin.ogg" },
+		{ "id" : "horse", "name" : "cheval", "black" : "cheval", "grey" : "", "url" : "cheval.mp3" },
+		{ "id" : "lemon", "name" : "citron", "black" : "citron", "grey" : "", "url" : "citron.ogg" }
+	],
+	[
+		{ "id" : "apricot", "name" : "abricot", "black" : "abrico", "grey" : "t", "url" : "abricot.mp3" },
+		{ "id" : "cow", "name" : "vache", "black" : "vach", "grey" : "e", "url" : "vache.mp3" },
+		{ "id" : "orange", "name" : "orange", "black" : "orang", "grey" : "e", "url" : "orange.ogg" }
+	],
+	[
+		{ "id" : "bear", "name" : "ours", "black" : "ours", "grey" : "", "url" : "ours.mp3" },
+		{ "id" : "cherry", "name" : "cerise", "black" : "ceris", "grey" : "e", "url" : "cerise.mp3" },
+		{ "id" : "sheep", "name" : "mouton", "black" : "mouton", "grey" : "", "url" : "mouton.mp3" }
+	],
+	[
+		{ "id" : "strawberry", "name" : "fraise", "black" : "frais", "grey" : "e", "url" : "fraise.mp3" },
+		{ "id" : "duck", "name" : "canard", "black" : "canar", "grey" : "d", "url" : "canard.mp3" },
+		{ "id" : "neck", "name" : "cou", "black" : "cou", "grey" : "", "url" : "cou.mp3" },
+		{ "id" : "dog", "name" : "chien", "black" : "chien", "grey" : "", "url" : "chien.mp3" }
+	],
+	[
+		{ "id" : "cat", "name" : "chat", "black" : "cha", "grey" : "t", "url" : "chat.mp3" },
+		{ "id" : "fish", "name" : "poisson", "black" : "poisson", "grey" : "", "url" : "poisson.mp3" },
+		{ "id" : "arm", "name" : "bras", "black" : "bra", "grey" : "s", "url" : "bras.mp3" },
+		{ "id" : "laugh", "name" : "rire", "black" : "rir", "grey" : "e", "url" : "rire.mp3" }
+	],
+	[
+		{ "id" : "bird", "name" : "oiseau", "black" : "oiseau", "grey" : "", "url" : "oiseau.mp3" },
+		{ "id" : "back", "name" : "dos", "black" : "do", "grey" : "s", "url" : "dos.mp3" },
+		{ "id" : "sad", "name" : "triste", "black" : "trist", "grey" : "e", "url" : "triste.mp3" },
+		{ "id" : "rabbit", "name" : "lapin", "black" : "lapin", "grey" : "", "url" : "lapin.mp3" }
+	],
+	[
+		{ "id" : "happy", "name" : "heureux", "black" : "heureu", "grey" : "x", "url" : "heureux.mp3" },
+		{ "id" : "camel", "name" : "chameau", "black" : "chameau", "grey" : "", "url" : "chameau.mp3" },
+		{ "id" : "whale", "name" : "baleine", "black" : "balein", "grey" : "e", "url" : "baleine.mp3" },
+		{ "id" : "lion", "name" : "lion", "black" : "lion", "grey" : "", "url" : "lion.mp3" }
+	],
+	[
+		{ "id" : "hen", "name" : "poule", "black" : "poul", "grey" : "e", "url" : "poule.mp3" },
+		{ "id" : "ankle", "name" : "cheville", "black" : "chevill", "grey" : "e", "url" : "cheville.mp3" },
+		{ "id" : "dolphin", "name" : "dauphin", "black" : "dauphin", "grey" : "", "url" : "dauphin.mp3" },
+		{ "id" : "nose", "name" : "nez", "black" : "nez", "grey" : "", "url" : "nez.mp3" }
+	],
+	[
+		{ "id" : "wolf", "name" : "loup", "black" : "lou", "grey" : "p", "url" : "loup.mp3" },
+		{ "id" : "crab", "name" : "crabe", "black" : "crab", "grey" : "e", "url" : "crabe.mp3" },
+		{ "id" : "chin", "name" : "menton", "black" : "menton", "grey" : "", "url" : "menton.mp3" },
+		{ "id" : "mouse", "name" : "souris", "black" : "souri", "grey" : "s", "url" : "souris.mp3" },
+		{ "id" : "feather", "name" : "plume", "black" : "plum", "grey" : "e", "url" : "plume.mp3" }
+	],
+	[
+		{ "id" : "knee", "name" : "genou", "black" : "genou", "grey" : "", "url" : "genou.mp3" },
+		{ "id" : "koala", "name" : "koala", "black" : "koala", "grey" : "", "url" : "koala.mp3" },
+		{ "id" : "panda", "name" : "panda", "black" : "panda", "grey" : "", "url" : "panda.mp3" },
+		{ "id" : "fox", "name" : "renard", "black" : "renar", "grey" : "d", "url" : "renard.mp3" },
+		{ "id" : "frog", "name" : "grenouille", "black" : "grenouill", "grey" : "e", "url" : "grenouille.mp3" }
+	],
+	[
+		{ "id" : "ear", "name" : "oreille", "black" : "oreill", "grey" : "e", "url" : "oreille.mp3" },
+		{ "id" : "giraffe", "name" : "girafe", "black" : "giraf", "grey" : "e", "url" : "girafe.mp3" },
+		{ "id" : "kiwi", "name" : "kiwi", "black" : "kiwi", "grey" : "", "url" : "kiwi.mp3" },
+		{ "id" : "crocodile", "name" : "crocodile", "black" : "crocodil", "grey" : "e", "url" : "crocodile.mp3" },
+		{ "id" : "turtle", "name" : "tortue", "black" : "tortu", "grey" : "e", "url" : "tortue.mp3" }
+	],
+	[
+		{ "id" : "foal", "name" : "poulain", "black" : "poulain", "grey" : "", "url" : "poulain.mp3" },
+		{ "id" : "calf", "name" : "veau", "black" : "veau", "grey" : "", "url" : "veau.mp3" },
+		{ "id" : "foot", "name" : "pied", "black" : "pied", "grey" : "", "url" : "pied.mp3" },
+		{ "id" : "chimp", "name" : "singe", "black" : "sing", "grey" : "e", "url" : "singe.mp3" },
+		{ "id" : "elbow", "name" : "coude", "black" : "coud", "grey" : "e", "url" : "coude.mp3" }
+	],
+	[
+		{ "id" : "jaguar", "name" : "jaguar", "black" : "jaguar", "grey" : "", "url" : "jaguar.mp3" },
+		{ "id" : "finger", "name" : "doigt", "black" : "doi", "grey" : "gt", "url" : "doigt.mp3" },
+		{ "id" : "eyes", "name" : "yeux", "black" : "yeu", "grey" : "x", "url" : "yeux.mp3" },
+		{ "id" : "kitten", "name" : "chaton", "black" : "chaton", "grey" : "", "url" : "chaton.mp3" },
+		{ "id" : "tomato", "name" : "tomate", "black" : "tomat", "grey" : "e", "url" : "tomate.mp3" }
+	]
+]
